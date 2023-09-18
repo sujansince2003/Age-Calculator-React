@@ -1,8 +1,13 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 32px;
+  font-family: 'Poppins';
 }
 .container
 {
@@ -16,7 +21,7 @@
 .calbox
 {
   border: 2px solid blue;
- 
+  padding: 20px;
   background-color:hsl(0, 0%, 100%);
  
   /* background-color: hsl(0, 1%, 44%); */
@@ -27,8 +32,17 @@
 .inputbox
 {
   display: flex;
-  gap: 20px;
-  justify-content: space-evenly
+  gap: 3rem;
+  
+  
+}
+
+input[type=text]
+{
+  height: 50px;
+  width: 100px;
+  padding: 20px;
+
 }
 
 .inputbox2
@@ -36,4 +50,18 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+
+.results
+{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.results span
+
+{
+  font-weight: bold;
+  font-size: 50px;
 }

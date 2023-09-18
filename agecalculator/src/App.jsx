@@ -17,6 +17,11 @@ function App() {
               <input type="text" />
             </div>
           </div>
+          <div className="results">
+            <span> 4 Years</span>
+            <span> 4 Years</span>
+            <span> 4 Years</span>
+          </div>
         </div>
       </div>
     </>
