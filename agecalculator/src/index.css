@@ -1,0 +1,25 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.calbox
+{
+  border: 2px solid blue;
+ 
+  background-color:hsl(0, 0%, 100%);
+ 
+  /* background-color: hsl(0, 1%, 44%); */
+  /* background-color: hsl(0, 1%, 44%); */
+  /* background-color: hsl(0, 1%, 44%); */
+}
