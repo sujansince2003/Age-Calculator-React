@@ -4,20 +4,18 @@ function App() {
       <div className="container">
         <div className="calbox">
           <div className="inputbox">
-            <form>
-              <div className="inputbox">
-                day
-                <input type="text" />
-              </div>
-              <div className="inputbox">
-                Month
-                <input type="text" />
-              </div>
-              <div className="inputbox">
-                Year
-                <input type="text" />
-              </div>
-            </form>
+            <div className="inputbox2">
+              day
+              <input type="text" />
+            </div>
+            <div className="inputbox2">
+              Month
+              <input type="text" />
+            </div>
+            <div className="inputbox2">
+              Year
+              <input type="text" />
+            </div>
           </div>
         </div>
       </div>
