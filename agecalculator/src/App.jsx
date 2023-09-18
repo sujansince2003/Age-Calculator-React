@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 function App() {
+  const [years, setYears] = useState(0);
+  const [days, setDays] = useState(0);
+  const [months, setMonths] = useState(0);
   return (
     <>
       <div className="container">
@@ -19,13 +24,13 @@ function App() {
           </div>
           <div className="results">
             <span>
-              <span className="valuee">5</span> Years
+              <span className="valuee">{years}</span> Years
             </span>
             <span>
-              <span className="valuee">5</span> Years
+              <span className="valuee">{months}</span> Years
             </span>
             <span>
-              <span className="valuee">5</span> Years
+              <span className="valuee">{days}</span> Years
             </span>
           </div>
         </div>
