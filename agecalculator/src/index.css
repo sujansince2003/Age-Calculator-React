@@ -78,3 +78,7 @@ input[type=text]
   font-size: 50px;
   font-style: italic;
 }
+.valuee
+{
+  color: hsl(259, 100%, 65%);
+}
