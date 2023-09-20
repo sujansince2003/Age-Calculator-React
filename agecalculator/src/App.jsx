@@ -2,16 +2,18 @@ import { useState } from "react";
 
 function App() {
   const date = new Date();
+  let agedate;
   console.log(date.getDate());
 
   const [flag, setFlag] = useState(0);
   const [years, setYears] = useState(0);
   const [days, setDays] = useState(0);
   const [months, setMonths] = useState(0);
+  const [age, setAge] = useState({});
   function setdata() {
     setFlag(1);
     if (
-      isNaN(months) ||
+      (months && days && years && isNaN(months)) ||
       isNaN(days) ||
       isNaN(years) ||
       months < 1 ||
@@ -19,13 +21,18 @@ function App() {
       days < 1 ||
       days > 30
     )
-      setDays((days) => date.getDate() - parseInt(days));
-    setMonths((months) => date.getMonth() - parseInt(months));
-    setYears((years) => date.getFullYear() - parseInt(years));
+      setDays((days) => parseInt(days));
+    setMonths((months) => parseInt(months));
+    setYears((years) => parseInt(years));
+    agedate = new Date("years,months,date");
+    setAge({
+      year: date.getFullYear() - agedate.getFullYear(),
+    });
   }
 
   return (
     <>
+      {console.log(typeof age.year)}
       <div className="container">
         <div className="calbox">
           <div className="inputbox">
@@ -54,7 +61,7 @@ function App() {
           </div>
           <div className="results">
             <span>
-              <span className="valuee">{flag == 1 ? years : " "}</span> Years
+              <span className="valuee">{flag == 1 ? age.year : " "}</span> Years
             </span>
             <span>
               <span className="valuee">{flag == 1 ? months : " "}</span> Months
