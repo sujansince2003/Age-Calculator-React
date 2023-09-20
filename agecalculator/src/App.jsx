@@ -40,10 +40,13 @@ function App() {
     setYears("");
     setAge({});
   }
+  function keyDownEvent(e) {
+    if (e.key == "Enter") setdata();
+  }
 
   return (
     <>
-      <div className="container">
+      <div className="container" onKeyDown={keyDownEvent}>
         <div className="calbox">
           <div className="inputbox">
             <div className="inputbox2 ">
