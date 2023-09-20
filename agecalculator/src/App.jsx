@@ -76,7 +76,7 @@ function App() {
             </div>
           </div>
           <div className="btn">
-            <button onClick={setdata}>Calculate</button>
+            {flag === 0 && <button onClick={setdata}>Calculate</button>}
           </div>
           {flag === 1 ? (
             <div className="results">
