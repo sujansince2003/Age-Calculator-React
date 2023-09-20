@@ -20,19 +20,18 @@
 
 .calbox
 {
-  border: 2px solid blue;
+  border: 2px solid rgb(41, 138, 62);
   padding: 20px;
   background-color:hsl(0, 0%, 100%);
+  border-radius: 20px;
  
-  /* background-color: hsl(0, 1%, 44%); */
-  /* background-color: hsl(0, 1%, 44%); */
-  /* background-color: hsl(0, 1%, 44%); */
+ 
 }
 
 .inputbox
 {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   
   
 }
@@ -40,8 +39,8 @@
 input[type=text]
 {
   height: 50px;
-  width: 100px;
-  padding: 20px;
+  width: 120px;
+  padding: 10px;
 
 }
 
@@ -51,6 +50,7 @@ input[type=text]
   flex-direction: column;
   row-gap: 10px;
 }
+
 .btn
 {
   display: flex;
@@ -81,4 +81,9 @@ input[type=text]
 .valuee
 {
   color: hsl(259, 100%, 65%);
+}
+
+.message
+{
+  text-align: center;
 }

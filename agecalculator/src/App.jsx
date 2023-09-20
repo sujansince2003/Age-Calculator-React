@@ -33,16 +33,23 @@ function App() {
       setFlag(2);
     }
   }
+  function reset() {
+    setFlag(0);
+    setMonths("");
+    setDays("");
+    setYears("");
+    setAge({});
+  }
 
   return (
     <>
-      {console.log(typeof age.year)}
       <div className="container">
         <div className="calbox">
           <div className="inputbox">
-            <div className="inputbox2">
+            <div className="inputbox2 ">
               Year
               <input
+                className="year"
                 type="text"
                 value={years}
                 onChange={(e) => setYears(e.target.value)}
@@ -82,6 +89,9 @@ function App() {
               <span>
                 <span className="valuee">{age.day}</span> Days
               </span>
+              <div className="btn">
+                <button onClick={reset}>Reset</button>
+              </div>
             </div>
           ) : flag != 2 ? (
             <>
@@ -90,6 +100,9 @@ function App() {
           ) : (
             <>
               <div className="message">PROVIDED DATA IS NOT ACCEPTED</div>
+              <div className="btn">
+                <button onClick={reset}>Try Again</button>
+              </div>
             </>
           )}
         </div>
