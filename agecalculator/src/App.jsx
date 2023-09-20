@@ -10,10 +10,18 @@ function App() {
   const [months, setMonths] = useState(0);
   function setdata() {
     setFlag(1);
-
-    setDays((days) => date.getDate() - days);
-    setMonths((months) => parseInt(months) + 1);
-    setYears((years) => parseInt(years) + 1);
+    if (
+      isNaN(months) ||
+      isNaN(days) ||
+      isNaN(years) ||
+      months < 1 ||
+      months > 12 ||
+      days < 1 ||
+      days > 30
+    )
+      setDays((days) => date.getDate() - parseInt(days));
+    setMonths((months) => date.getMonth() - parseInt(months));
+    setYears((years) => date.getFullYear() - parseInt(years));
   }
 
   return (
