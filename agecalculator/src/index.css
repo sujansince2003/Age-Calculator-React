@@ -51,6 +51,18 @@ input[type=text]
   flex-direction: column;
   row-gap: 10px;
 }
+.btn
+{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  
+}
+
+.btn button
+{
+  padding: 10px;
+}
 
 .results
 {
